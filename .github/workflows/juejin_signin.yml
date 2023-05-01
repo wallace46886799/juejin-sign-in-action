@@ -5,7 +5,8 @@ on:
     branches: 
       - main
   schedule:
-    - cron: '23 12 * * *'
+    # 每天国际时间 17:20 运行一次, 中国时间 01:30
+    - cron: '30 17 * * *'
 
 jobs:
   juejin-autoSignIn:
